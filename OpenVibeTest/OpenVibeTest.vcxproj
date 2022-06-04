@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77094415-9F4A-43E4-BEF2-37180C9266CD}</ProjectGuid>
+    <RootNamespace>OpenVibeTest</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:/openvibe/openvibe-modules/system/trunc/include;C:/openvibe/dependencies/vrpn/include;C:\openvibe\tobiisdk-3.0.2-Win32\C++\includes\tobii\sdk;C:\openvibe\SDL-1.2.15\include;C:\openvibe\pthreads\include;C:\boost_1_48_0;C:\openvibe\SDL_gfx-2.0.22;C:\openvibe\indielib\IndieLib_SDK\tutorials\source\common\LibHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\openvibe\openvibe-modules\system\trunc\lib\OpenViBE-module-System-dynamic.lib;C:\openvibe\dependencies\vrpn\lib\vrpn.lib;C:\openvibe\dependencies\vrpn\lib\quat.lib;C:\openvibe\tobiisdk-3.0.2-Win32\C++\binaries\tobiisdk.lib;C:\openvibe\SDL-1.2.15\lib\x86\SDL.lib;C:\openvibe\SDL-1.2.15\lib\x86\SDLmain.lib;C:\boost_1_48_0\bin.v2\libs\thread\build\msvc-10.0\debug\link-static\threading-multi\libboost_thread-vc100-mt-gd-1_48.lib;C:\boost_1_48_0\bin.v2\libs\date_time\build\msvc-10.0\debug\link-static\threading-multi\libboost_date_time-vc100-mt-gd-1_48.lib;C:\openvibe\SDL_gfx-2.0.22\Debug\SDL_gfx.lib;C:\openvibe\indielib\IndieLib_SDK\tutorials\source\common\IndieLib_vc2008.lib;C:\Program Files\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\boost_1_48_0;C:\openvibe\pthreads\include;C:\openvibe\tobiisdk-3.0.2-Win32\C++\includes\;C:/openvibe/dependencies/vrpn/include;C:/openvibe/openvibe-modules/system/trunc/include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;C:\Users\LIG-IIHM\Documents\Visual Studio 2010\Projects\OpenVibeTest\common\LibHeaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\openvibe\openvibe-modules\system\trunc\lib\OpenViBE-module-System-dynamic.lib;C:\openvibe\dependencies\vrpn\lib\vrpn.lib;C:\openvibe\dependencies\vrpn\lib\quat.lib;C:\openvibe\tobiisdk-3.0.2-Win32\C++\binaries\tobiisdk.lib;C:\boost_1_48_0\bin.v2\libs\thread\build\msvc-10.0\release\link-static\threading-multi\libboost_thread-vc100-mt-1_48.lib;C:\boost_1_48_0\bin.v2\libs\date_time\build\msvc-10.0\release\link-static\threading-multi\libboost_date_time-vc100-mt-1_48.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CIndieLib_vc2008.cpp" />
+    <ClCompile Include="GameStateActive.cpp" />
+    <ClCompile Include="GameStateGetReady.cpp" />
+    <ClCompile Include="GameStateManager.cpp" />
+    <ClCompile Include="GameStateRest.cpp" />
+    <ClCompile Include="GratzFeedback.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ovaCAbstractVrpnPeripheral.cpp" />
+    <ClCompile Include="ovassvepCCommandReceiveTarget.cpp" />
+    <ClCompile Include="ovassvepCCommandStartStop.cpp" />
+    <ClCompile Include="ovassvepCCommandStimulatorControl.cpp" />
+    <ClCompile Include="ovassvepCRotateControl.cpp" />
+    <ClCompile Include="ovassvepCVRPNServer.cpp" />
+    <ClCompile Include="ovassvepICommandVRPNButton.cpp" />
+    <ClCompile Include="Puzzle.cpp" />
+    <ClCompile Include="PuzzleInputManager.cpp" />
+    <ClCompile Include="SSVEP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CIndieLib_vc2008.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GameStateActive.h" />
+    <ClInclude Include="GameStateGetReady.h" />
+    <ClInclude Include="GameStateManager.h" />
+    <ClInclude Include="GameStateRest.h" />
+    <ClInclude Include="GratzFeedback.h" />
+    <ClInclude Include="ovaCAbstractVrpnPeripheral.h" />
+    <ClInclude Include="ovassvepCCommandReceiveTarget.h" />
+    <ClInclude Include="ovassvepCCommandStartStop.h" />
+    <ClInclude Include="ovassvepCRotateControl.h" />
+    <ClInclude Include="ovassvepCVRPNServer.h" />
+    <ClInclude Include="ovassvepICommand.h" />
+    <ClInclude Include="ovassvepICommandVRPNButton.h" />
+    <ClInclude Include="puzzle.h" />
+    <ClInclude Include="PuzzleInputManager.h" />
+    <ClInclude Include="Rotation.h" />
+    <ClInclude Include="SSVEP.h" />
+    <ClInclude Include="StateStart.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
